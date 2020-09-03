@@ -16,8 +16,7 @@ body {
 }
 
 .profile {
-	/* background-color: lavender; */
-	background-color: thistle;
+	background-color: lavender;
 	display: grid;
 	align-items: center;
 	justify-items: center;
