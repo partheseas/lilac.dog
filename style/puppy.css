@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap");
+
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+
+	padding: 0;
+	margin: 0;
+
+	font-family: "Noto Sans JP";
+
+	overflow: hidden;
+
+	user-select: none;
+}
+
+.profile {
+	/* background-color: lavender; */
+	background-color: thistle;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+/* .pronouns {
+	margin-top: 24px;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+} */
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+
+	position: fixed;
+	bottom: 15px;
+	left: 45px;
+
+	font-size: 14px;
+	padding-top: 8px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
