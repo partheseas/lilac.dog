@@ -1,6 +1,6 @@
 {
 	"private": true,
-	"name": "lilac",
+	"name": "lilac.dog",
 	"dependencies": {
 		"next": "^9.5.3",
 		"react": "^16.13.1",
