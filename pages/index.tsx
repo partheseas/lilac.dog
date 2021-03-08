@@ -11,7 +11,6 @@ const Lilac = () => {
 			<div className="profile">
 				<div>
 					<img src="/bone.svg" />
-					<h1>it/its</h1>
 				</div>
 			</div>
 			<p className="footer">
