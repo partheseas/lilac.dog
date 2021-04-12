@@ -14,7 +14,7 @@ const Lilac = () => {
 				</div>
 			</div>
 			<p className="footer">
-				&copy; 2020 <img src="/paw.svg" style={{ height: 28 }} />{" "}
+				&copy; 2021 <img src="/paw.svg" style={{ height: 28 }} />{" "}
 				<a href="https://mckay.la">McKayla</a>
 			</p>
 		</>
