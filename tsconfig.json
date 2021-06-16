@@ -1,19 +1,17 @@
 {
+	"extends": "@mckayla/tsconfig",
 	"compilerOptions": {
-		"target": "es5",
-		"lib": ["dom", "dom.iterable", "esnext"],
-		"allowJs": true,
-		"skipLibCheck": true,
-		"strict": false,
-		"forceConsistentCasingInFileNames": true,
+		"lib": ["dom", "esnext"],
+		"allowJs": false,
+		"skipLibCheck": false,
 		"noEmit": true,
-		"esModuleInterop": true,
-		"module": "esnext",
-		"moduleResolution": "node",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"jsx": "preserve"
+		"noImplicitOverride": false,
+		"tsBuildInfoFile": "./.next/tsconfig.tsbuildinfo",
+		"baseUrl": ".",
+		"paths": {
+			"^/*": ["./*"]
+		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["next-env.d.ts", "**/*"],
 	"exclude": ["node_modules"]
 }
