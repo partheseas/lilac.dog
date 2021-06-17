@@ -6,11 +6,13 @@
 		"react-dom": "^17.0.2"
 	},
 	"devDependencies": {
+		"@mckayla/eslint-plugin": "^0.1.10",
 		"@mckayla/prettier": "^2.0.0",
 		"@mckayla/tsconfig": "^4.3.0",
 		"@types/node": "^14.6.3",
 		"@types/react": "^17.0.11",
 		"@types/react-dom": "^17.0.7",
+		"eslint": "^7.28.0",
 		"next": "^11.0.0",
 		"prettier": "^2.3.1",
 		"typescript": "^4.3.2"
@@ -18,6 +20,8 @@
 	"scripts": {
 		"build": "next build",
 		"dev": "next dev",
-		"fmt": "prettier --ignore-path .gitignore --write ."
+		"fmt": "prettier --ignore-path .gitignore --write .",
+		"lint": "eslint .",
+		"type-check": "tsc -p . --noEmit"
 	}
 }

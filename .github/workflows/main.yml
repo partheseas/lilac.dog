@@ -1,0 +1,28 @@
+name: main
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Use Node.js 16.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 16.x
+
+            - run: npm install
+
+            # Prettier currently breaks on the override keywork from TypeScript 4.3
+            - run: npx prettier --ignore-path .gitignore --check .
+              continue-on-error: true
+            - run: npm run type-check
+            - run: npm run build
+            - run: npm run lint
